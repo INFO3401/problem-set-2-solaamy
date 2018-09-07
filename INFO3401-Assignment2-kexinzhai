@@ -1,0 +1,48 @@
+Problem set #2
+Wednesday
+1.
+cd ~
+Move to the home directory
+If you are not in the home directory, maybe under the home directory, this command would move you to the home directory.
+Nothing would be printed to the command line. If you type “ls” after “cd ~”, the files and folders contained in home directory would be printed to the command line.
+
+mkdir ./problem_set_1 
+Make a new directory under root called “probelm_set_1”
+Nothing would be printed to the command line. If you type “ls” after this command, the files and folders contained in home directory, includes new directory “problem_set_1” would be printed to the command line.
+
+touch submission.txt
+Create a blank file named “submission.txt”.
+Nothing would be printed to the command line. If you type “ls” after this command, the files and folders contained in current directory, includes new file “submission.txt” would be printed to the command line.
+
+cd ..
+Change the current directory to the parent directory
+Nothing would be printed to the command line. If you type “ls” after this command, the files and folders contained in the parent directory would be printed to the command line.
+
+pwd
+Print working directory
+Working directory would be printed to the command line. Such as “/Users/kexinzhai/Documents”.
+
+2.
+Copy a document called config.txt from your home directory to the root directory.
+cp ~/config.txt /
+create a new directory in the root called preferences.
+cd /
+mkdir preferences
+Within preferences, copy prefs.txt from a matching directory called preferences in your home directory. 
+cp ~/preferences/prefs.txt /preferences
+Finally, determine that the start and end of the config.txt document in both root and home match.
+head -n 1 /preferences/config.txt
+tail -n 1 /preferences/config.txt
+head -n 1 ~/preferences/config.txt
+tail -n 1 ~/preferences/config.txt
+
+3.
+It is important to have Root, Home and Parent for navigating the file structure. Because, it would be clearly to locate the file and organize the file.
+
+4.
+users/homework/problem1
+
+5.
+mv ~/Documents/datafile.csv .
+cp ~/Documents/datafile.csv .
+cp ./datafile.csv ~/Documents/  or mv ./datafile.csv ~/Documents/
